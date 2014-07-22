@@ -1,3 +1,41 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body p, body h1, body h2, body ul, body table, body b, body ul {
+  font-family: 'open_sansLight', Times, sans-serif;
+}
+
+h1, h2, h3 {
+  padding-bottom: 5px;
+}
+
+
+
+
+
+.content {
+  padding-top: 58px;
+}
+
+#section {
+  height: calc(100vh - 48px);
+  margin: 20px;
+  background: rgba(0,0,0,0.8);
+/*  border-style: solid;
+  border-width: 3px;
+  border-color: #79B0D4;*/
+}
+
+.focus {
+  height: 100%;
+  width: 20px;
+  background: #094c78;
+  float: left;
+}
+
+#content {
+  margin-left: 24px;
+  padding: 10px;
+}

@@ -1,0 +1,40 @@
+.toolbar {
+	padding: 5px;
+	background: black;
+	position: fixed;
+	height: 48px;
+	width: 100%;
+}
+
+.logo {
+	padding-top: 5px;
+	float: left;
+}
+
+.navigation {
+	padding-top: 6px;
+	color: black;
+	float: right;
+	margin-right: 20px;
+}
+
+.navigation ul li {
+	float: left;
+	margin: 4px;
+}
+
+.navigation ul li a {
+	padding: 8px;
+	border-radius: 3px;
+	background: /*#102A7F*/white;
+}
+
+.navigation ul li a:hover {
+
+	background: #028345;
+	color: white;
+}
+
+a {
+	display: block;
+}
