@@ -1,35 +1,39 @@
-.content
-	.about#section
-		.focus
-		.about#content
-			%h2 About
-			%p Mueller Megawatt Project is a grassroots effort
+.home
+	.section#about
+		= render partial: 'shared/about'
 
-	.installations#section
-		.focus
-		.installations#content
-			%h2 Installations
-	.resources#section
-		.focus
-		.resources#content
-			%h2 Resources
-	.press#section
-		.focus
-		.press#content
-			%h2 Press
+	.section#resources
+		= render partial: 'shared/resources'
 
-	.contact_us#section
-		.focus
-		.contact_us#content
-			%h2 Contact Us
+	.section#press
 
-	.thanks#section
-		.focus
-		.thanks#content
-			%h2 Thanks
+	.section#contact_us
 
-	.disclosure#section
-		.focus
-		.disclosure#content
-			%h2 Disclosure
+		/ %section#installations
+
+
+
+		/ %resources#section
+		/ 	.focus
+		/ 	.resources#content
+		/ 		%h2 Resources
+		/ .press#section
+		/ 	.focus
+		/ 	.press#content
+		/ 		%h2 Press
+
+		/ .contact_us#section
+		/ 	.focus
+		/ 	.contact_us#content
+		/ 		%h2 Contact Us
+
+		/ .thanks#section
+		/ 	.focus
+		/ 	.thanks#content
+		/ 		%h2 Thanks
+
+		/ .disclosure#section
+		/ 	.focus
+		/ 	.disclosure#content
+		/ 		%h2 Disclosure
 

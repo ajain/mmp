@@ -15,9 +15,11 @@
  */
 
 
+
 h1 {
-	color: #07AD5D;
+	color: #FFB960;
 	font-size: 36px;
+	text-decoration: bold;
 
 }
 
@@ -27,18 +29,21 @@ h2, h3, h4 {
 }
 
 body {
-/*  background: #302D2E;
-  opacity: 50;*/
-  background: url(MuellerMegawattProject.jpg) top right no-repeat, black;
-  width: 100%;
-  background-attachment: fixed;  
-  opacity: 50, 50;
-  color: white;
-  min-width: 1100px;
+	background: url(MuellerMegawattProject.jpg) top center no-repeat, black;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
 }
 
+/* 	-webkit-filter: contrast(4);
+	filter: contrast(4);*/
+.content {
+	margin: 0 auto;
+	width: 1200px;
+}
 
-
+.section {
+	padding-top: 15px;
+}
 
 .color-primary-0 { color: #2BB673 }	/* Main Primary color */
 .color-primary-1 { color: #77DBAB }

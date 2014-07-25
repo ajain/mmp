@@ -1,40 +1,65 @@
+$activecolor: #F98F0A;
+
 .toolbar {
-	padding: 5px;
+	padding: 5px 0 5px 0;
 	background: black;
 	position: fixed;
 	height: 48px;
 	width: 100%;
 }
 
+
 .logo {
 	padding-top: 5px;
+	float: left;
+
+}
+
+.logo img {
 	float: left;
 }
 
 .navigation {
-	padding-top: 6px;
 	color: black;
 	float: right;
-	margin-right: 20px;
 }
 
-.navigation ul li {
-	float: left;
-	margin: 4px;
+#main-nav {
+	padding-top: 6px;
 }
 
-.navigation ul li a {
-	padding: 8px;
-	border-radius: 3px;
-	background: /*#102A7F*/white;
+.navigation {
+	li {
+		float: left;
+		margin: 0 4px 0 4px;
+	}
+
+	li a {
+		padding: 8px;
+		border-radius: 3px;
+		background: /*#102A7F*/white;
+	}
+
 }
 
 .navigation ul li a:hover {
 
-	background: #028345;
+	background: $activecolor;
 	color: white;
 }
 
+#tab ul li a, #rtab ul li a {
+	padding: 6px;
+	font-size: 15px;
+	background: white;
+	text-decoration: none;
+	color: black;
+
+}
+
+.active {
+	background: $activecolor !important;
+}
 a {
 	display: block;
 }
