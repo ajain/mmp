@@ -28,6 +28,13 @@ h2, h3, h4 {
 	font-size: 24px;
 }
 
+h1, h2, h3, h4 {
+	padding-bottom: 15px;
+}
+p {
+	color:white;
+}
+
 body {
 	background: url(MuellerMegawattProject.jpg) top center no-repeat, black;
 	background-repeat:no-repeat;
@@ -36,7 +43,7 @@ body {
 
 /* 	-webkit-filter: contrast(4);
 	filter: contrast(4);*/
-.content {
+.container {
 	margin: 0 auto;
 	width: 1200px;
 }
@@ -62,3 +69,15 @@ body {
 .color-secondary-2-2 { color: #D0F65D }
 .color-secondary-2-3 { color: #B5EC0A }
 .color-secondary-2-4 { color: #88B303 }
+
+.rightsidebar {
+	
+}
+
+.leftsidebar {
+
+}
+
+.threecolumn {
+
+}

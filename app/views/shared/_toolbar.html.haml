@@ -1,21 +1,32 @@
 .toolbar
-	.content
+	.container
 		.logo
 			= image_tag('MMP-logo-small.png') 
-		.navigation#main-nav
-			%ul
-				%li 
-					%a About
-				%li
-					%a Installations
-				%li 
-					%a Resources
-				%li 
-					%a Press
-				%li 
-					%a Contact Us
-				%li 
-					%a Thanks
-				%li 
-					%a Disclosure
+
+
+
+		%ul#nav-main
+			%li 
+				%a{:href => "#"} About
+				%ul#dropdown
+					%li
+						%a{:href => "#"} About Us
+					%li
+						%a{:href => "#"} Test 2
+					%li
+						%a{:href => "#"} Privates
+
+
+			%li
+				%a Installations
+			%li 
+				%a Resources
+			%li 
+				%a Press
+			%li 
+				%a Contact Us
+			%li 
+				%a Thanks
+			%li 
+				%a Disclosure
 
