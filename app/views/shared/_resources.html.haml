@@ -9,7 +9,23 @@
 	.content#solar-faq-tab
 		%h1 Solar FAQ
 		%p "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-	.content#solar-dictionary-tab 
+	.content#solar-dictionary-tab
 		%h1 Solar Dictionary
+		%ul
+			%li
+				%a{:href => "#alternating-current", :id => "alternating-current"}Alternating Current
+			%li
+				%a{:href => "#array", :id => "array"}Array
+			%li
+				%a{:href => "#azimuth", :id => "azimuth"}Who We Are
+
+
+		.content#alternating-current
+			%h1 Alternating Current
+		.content#array
+			%h1 Array
+		.content#azimuth
+			%h1 Azimuth 
+		/ = render partial: 'shared/solardictionary'
 	.content#useful-links-tab 
 		%h1 Useful Links 

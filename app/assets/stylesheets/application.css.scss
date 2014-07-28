@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 h1 {
 	color: #FFB960;
 	font-size: 36px;
@@ -35,6 +33,14 @@ p {
 	color:white;
 }
 
+
+p, ul, table, h1, h2, h3, h4 {
+	font-family: 'open_sansLight', Arial, sans-serif;
+}
+
+/*h1, h2, h3, h4 {
+	font-family: 'open_sansSemibold', Arial, sans-serif;
+}*/
 body {
 	background: url(asset-path('MuellerMegawattProject.jpg')) top center no-repeat, black;
 	background-repeat:no-repeat;

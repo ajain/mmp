@@ -17,41 +17,59 @@
 
 
 
-$(function($) {
-  function changeTab(e) {
+jQuery(function($) {
+  function changeAboutTab(e) {
     e.preventDefault();
     $("#about-tab ul li a.active").removeClass("active");
     $(this).addClass("active");
-    showTab($(this).attr("href"));
+    showAboutTab($(this).attr("href"));
 
   }
 
-  function showTab(activeDiv) {
+  function showAboutTab(activeDiv) {
     $("#about-tab div").hide();
     $(activeDiv).show();
   }
 
-  $("#about-tab li a").click(changeTab);
+  $("#about-tab ul li a").click(changeAboutTab);
   $("#about-tab ul li:eq(0) a").click();
 
 });
 
 $(function($) {
-  function changeTab(e) {
+  function changeResourcesTab(e) {
     e.preventDefault();
-    $("#resources-tab ul li a.active").removeClass("active");
+    $("#resources-tab>ul>li>a.active").removeClass("active");
     $(this).addClass("active");
-    showTab($(this).attr("href"));
+    showResourcesTab($(this).attr("href"));
 
   }
 
-  function showTab(activeDiv) {
-    $("#resources-tab div").hide();
+  function showResourcesTab(activeDiv) {
+    $("#resources-tab>div").hide();
     $(activeDiv).show();
   }
 
-  $("#resources-tab li a").click(changeTab);
-  $("#resources-tab ul li:eq(0) a").click();
+  $("#resources-tab>ul>li>a").click(changeResourcesTab);
+  $("#resources-tab>ul>li:eq(0)>a").click();
 
 });
 
+$(function($) {
+  function changeDictionaryTab(e) {
+    e.preventDefault();
+    $("#solar-dictionary-tab>ul>li>a.active").removeClass("active");
+    $(this).addClass("active");
+    showDictionaryTab($(this).attr("href"));
+
+  }
+
+  function showDictionaryTab(activeDiv) {
+    $("#solar-dictionary-tab>div").hide();
+    $(activeDiv).show();
+  }
+
+  $("#solar-dictionary-tab>ul>li>a").click(changeDictionaryTab);
+  $("#solar-dictionary-tab>ul>li:eq(0)>a").click();
+
+});

@@ -3,10 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-body p, body h1, body h2, body ul, body table, body b, body ul {
-  font-family: 'open_sansLight', Arial, sans-serif;
-}
-
 h1, h2, h3 {
   padding-bottom: 5px;
 }
@@ -40,3 +36,8 @@ h1, h2, h3 {
 .section#resources {
   background: #0F669F;
 }
+
+#solar-dictionary-tab ul {
+  width: 200px;
+}
+
