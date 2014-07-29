@@ -1,31 +1,16 @@
 .container#resources-tab
+
 	%ul.navigation
 		%li
-			%a{:href => "#solar-faq-tab", :id => "about"}Solar FAQ
+			%a{:href => "#solar-faq-tab", :id => "solar-faq"}Solar FAQ
 		%li
-			%a{:href => "#solar-dictionary-tab", :id => "history"}Solar Dictionary
+			%a{:href => "#solar-dictionary-tab", :id => "solar-dictionary"}Solar Dictionary
 		%li
-			%a{:href => "#useful-links-tab", :id => "who_we_are"}Useful Links	
+			%a{:href => "#useful-links-tab", :id => "useful-links"}Useful Links	
 	.content#solar-faq-tab
 		%h1 Solar FAQ
 		%p "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
 	.content#solar-dictionary-tab
-		%h1 Solar Dictionary
-		%ul
-			%li
-				%a{:href => "#alternating-current", :id => "alternating-current"}Alternating Current
-			%li
-				%a{:href => "#array", :id => "array"}Array
-			%li
-				%a{:href => "#azimuth", :id => "azimuth"}Who We Are
-
-
-		.content#alternating-current
-			%h1 Alternating Current
-		.content#array
-			%h1 Array
-		.content#azimuth
-			%h1 Azimuth 
-		/ = render partial: 'shared/solardictionary'
+		= render partial: 'shared/solardictionary'
 	.content#useful-links-tab 
 		%h1 Useful Links 

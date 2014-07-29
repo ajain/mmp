@@ -11,18 +11,14 @@ h1, h2, h3 {
   padding-top: 90px;
 }
 
+#about h1 {
+  color: #FFA93C;
+}
+
 .section {
   height: 700px;
   width: 100%;
   }
-
-
-.focus {
-  height: 100%;
-  width: 20px;
-  background: #094c78;
-  float: left;
-}
 
 #container {
 /*  margin-left: 24px;*/
@@ -39,5 +35,41 @@ h1, h2, h3 {
 
 #solar-dictionary-tab ul {
   width: 200px;
+  background:lightgrey;
+}
+.download {
+  width: 100%;
+  float: right;
+  clear: both;
+  padding-bottom: 15px;
 }
 
+.pdf-icon {
+  width: 100%;
+  float: left;
+}
+
+.pdf-icon p, img {
+  padding: 25px 0 0 10px;
+  float: left;
+}
+
+.alignvertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dictionary {
+  float: right;
+  width: 940px;
+  padding: 10px;
+  background: ligthgrey;
+}
+
+#solar-dictionary-tab ul { 
+  float: left;
+  height: 450px;
+  overflow: auto;
+
+}

@@ -1,5 +1,6 @@
-/*$activecolor: #F98F0A;*/
-$activecolor: #07AD5D;
+$activecolor: #028345;
+$hoveractive: #07AD5D;
+/*$activecolor: #07AD5D;*/
 
 .toolbar {
 	padding: 5px 0 5px 0;
@@ -38,9 +39,9 @@ $activecolor: #07AD5D;
 
 }
 
-.navigation ul li a:hover {
+.navigation li :hover {
 
-	background: $activecolor;
+	background: $hoveractive;
 	color: white;
 }
 
@@ -57,9 +58,11 @@ $activecolor: #07AD5D;
 	background: $activecolor !important;
 	color: white !important;
 }
-a {
+
+
+/*a {
 	display: block;
-}
+}*/
 
 #nav-main{
 

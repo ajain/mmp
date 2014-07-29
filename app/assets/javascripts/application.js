@@ -20,19 +20,19 @@
 jQuery(function($) {
   function changeAboutTab(e) {
     e.preventDefault();
-    $("#about-tab ul li a.active").removeClass("active");
+    $("#about-tab>ul>li>a.active").removeClass("active");
     $(this).addClass("active");
     showAboutTab($(this).attr("href"));
 
   }
 
   function showAboutTab(activeDiv) {
-    $("#about-tab div").hide();
+    $("#about-tab>div").hide();
     $(activeDiv).show();
   }
 
-  $("#about-tab ul li a").click(changeAboutTab);
-  $("#about-tab ul li:eq(0) a").click();
+  $("#about-tab>ul>li >a").click(changeAboutTab);
+  $("#about-tab>ul>li:eq(0)>a").click();
 
 });
 
@@ -55,6 +55,25 @@ $(function($) {
 
 });
 
+// $(function($) {
+//   function changeDictionaryTab(e) {
+//     e.preventDefault();
+//     $("#solar-dictionary-tab>ul>li>a.active").removeClass("active");
+//     $(this).addClass("active");
+//     showDictionaryTab($(this).attr("href"));
+
+//   }
+
+//   function showDictionaryTab(activeDiv) {
+//     $("#solar-dictionary-tab>div").hide();
+//     $(activeDiv).show();
+//   }
+
+//   $("#solar-dictionary-tab>ul>li>a").click(changeDictionaryTab);
+//   $("#solar-dictionary-tab>ul>li:eq(0)>a").click();
+
+// });
+
 $(function($) {
   function changeDictionaryTab(e) {
     e.preventDefault();
@@ -64,9 +83,10 @@ $(function($) {
 
   }
 
-  function showDictionaryTab(activeDiv) {
+  function showDictionaryTab(activeDictionaryDiv) {
     $("#solar-dictionary-tab>div").hide();
-    $(activeDiv).show();
+    $(activeDictionaryDiv).show();
+    $(".download").show();
   }
 
   $("#solar-dictionary-tab>ul>li>a").click(changeDictionaryTab);
