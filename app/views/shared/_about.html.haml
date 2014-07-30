@@ -1,24 +1,60 @@
 .container#about-tab
-	%ul.navigation
+	%ul.navigation#sub-nav
 		%li
 			%a{:href => "#about_us-tab", :id => "about"}About Us
 		%li
-			%a{:href => "#history-tab", :id => "history"}History
+			%a{:href => "#timeline-tab", :id => "timeline"}Timeline
 		%li
-			%a{:href => "#who_we_are-tab", :id => "who_we_are"}Who We Are
+			%a{:href => "#press-tab", :id => "press"}Press
 		%li
-			%a{:href => "#where_we_are-tab", :id => "where_we_are"}Where We Are
+			%a{:href => "#thanks-tab", :id => "thanks"}Thanks
+		%li
+			%a{:href => "#disclosure-tab", :id => "disclosure"}Disclosure
 
 	#about_us-tab
 		%h1 About Us
-		%p The Mueller Megawatt Project was started in the middle of 2009 to loosely organize a grassroots effort to go solar in the <a href="http://www.MuellerAustin.com/" target="_blank">Mueller Community!</a> in Austin, TX. The ultimate goal of the group was to see one Megawatt (1,000 kilowatts) of solar capacity installed in the Mueller neighborhood. After the group's namesake was achieved in the summer of 2011, solar capacity has continued to grow in the neighborhood.
-		%br
-		%p If you are interested in going solar in Mueller - please check out the 10 Step to Go Solar in Mueller guide along with the resources on this site. If you don't live in Mueller, please browse to learn from our experiences.
+		.about-paragraph
+			%p The Mueller Megawatt Project was started in the middle of 2009 to loosely organize a grassroots effort to go solar in the <a href="http://www.MuellerAustin.com/" target="_blank">Mueller Community</a> in Austin, TX. The ultimate goal of the group was to see one Megawatt (1,000 kilowatts) of solar capacity installed in the Mueller neighborhood. After the group's namesake was achieved in the summer of 2011, solar capacity has continued to grow in the neighborhood.
+			%br
+			%p If you are interested in going solar in Mueller - please check out the 10 Step to Go Solar in Mueller guide along with the resources on this site. If you don't live in Mueller, please browse to learn from our experiences.
+		.goal
+			%p Goal
+			.box#capacity
+				.stat
+					%p 1.00 Megawatts
+				.label
+					%p Installed Capacity
+			.box#install-count
+				.stat
+					%p 200 
+				.label
+					%p Installations
+			.box#goalpercent
+				.stat
+					%p 100%
+				.label
+					%p Percent of Goal
+		.achieved
+			%p Current
+			.box#capacity
+				.stat
+					%p 1.57 Megawatts
+				.label
+					%p Installed Capacity
+			.box#install-count
+				.stat
+					%p 254 
+				.label
+					%p Installations
+			.box#goalpercent
+				.stat
+					%p 157%
+				.label
+					%p Percent of Goal	
 
-		
-	#history-tab 
-		%h1 History
-	#who_we_are-tab 
-		%h1 Who We Are
-	#where_we_are-tab 
-		%h1	Where We Are 
+	#timeline-tab 	
+		%h1 Timeline
+	#press-tab 
+		%h1 Press
+	#thanks-tab 
+		%h1	Thanks

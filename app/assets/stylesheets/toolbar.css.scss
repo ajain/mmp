@@ -8,6 +8,7 @@ $hoveractive: #07AD5D;
 	position: fixed;
 	height: 48px;
 	width: 100%;
+    border-bottom: 1px dotted #094c78;
 }
 
 
@@ -22,43 +23,47 @@ $hoveractive: #07AD5D;
 }
 
 .navigation {
-	color: black;
-	float: right;
-}
+    float: right;
+    color: white;
 
-.navigation {
 	li {
 		float: left;
 		margin: 0 4px 0 4px;
 	}
 
 	li a {
-		padding: 8px;
+		padding: 6px;
 		background: /*#102A7F*/white;
 	}
 
+    li:hover {
+        background: $hoveractive;
+        color: white;
+    }
+
 }
 
-.navigation li :hover {
-
-	background: $hoveractive;
-	color: white;
-}
-
-.container ul li a {
-	padding: 6px;
-	font-size: 15px;
+.navigation li a {
+	font-size: 14px;
 	background: white;
 	text-decoration: none;
 	color: black;
 
 }
 
-.active {
+#nav-main li a {
+    font-size: 16px;
+}
+
+#nav-main .active, #sub-nav .active {
 	background: $activecolor !important;
 	color: white !important;
 }
 
+#nav-main a:hover, #sub-nav a:hover, #solar-dictionary-tab a:hover {
+    color: white;
+    background:$activecolor;
+}
 
 /*a {
 	display: block;
@@ -69,8 +74,8 @@ $hoveractive: #07AD5D;
     list-style:none;
     margin-bottom:10px;
     float:right; /* Clear floats */
-/*    width:100%;*/
 	padding-top: 11px;
+
 }
 #nav-main li{
     float:left;
@@ -79,7 +84,6 @@ $hoveractive: #07AD5D;
 }
 #nav-main a{
     display: block;
-    padding: 6px;
     color: #fff;
     background:#333;
     text-decoration:none;
@@ -87,10 +91,7 @@ $hoveractive: #07AD5D;
     width: 90px;
     text-align: center;
 }
-#nav-main a:hover{
-    color:#fff;
-    background:$activecolor;
-}
+
 
 /*--- DROPDOWN ---*/
 #nav-main ul{
@@ -101,10 +102,7 @@ $hoveractive: #07AD5D;
     left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
     border-radius: 4px;
 }
-/*#nav-main ul li{
-    padding-top:1px;  Introducing a padding between the li and the a give the illusion spaced items 
-    float:none;
-}*/
+
 #nav-main ul a{
     white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
     background: grey;
@@ -122,6 +120,5 @@ $hoveractive: #07AD5D;
 #nav-main li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
     text-decoration:none;
 }
-/*#nav-main li:hover ul li a:hover{  Here we define the most explicit hover states--what happens when you hover each individual link. 
-    background:#333;
-}*/
+
+

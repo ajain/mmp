@@ -7,23 +7,80 @@ h1, h2, h3 {
   padding-bottom: 5px;
 }
 
-.container#about-tab {
-  padding-top: 90px;
+.section {
+  height: 600px;
+  width: 100%;
+  }
+
+#container {
+  padding: 10px;
 }
+
+/*ABOUT*/
 
 #about h1 {
   color: #FFA93C;
 }
 
-.section {
-  height: 700px;
-  width: 100%;
-  }
-
-#container {
-/*  margin-left: 24px;*/
-  padding: 10px;
+#about-tab {
+  padding-top: 65px;
 }
+.about-paragraph {
+  width: 782px;
+  float: left;
+  text-shadow: 1px 1px black;
+  padding: 10px 0 0 20px;
+  text-align: center;
+  margin-left: 180px;
+
+}
+
+.about-paragraph p {
+  font-size: 18px;
+/*  line-height: ;*/
+}
+
+#about_us-tab img {
+  border: 2px solid rgba(0,0,0,1);
+}
+
+.goal, .achieved {
+  float: left;
+  text-align: center;
+
+}
+
+.goal>p, .achieved>p {
+  font-size: 40px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.box {
+  height: 75px;
+  width: 150px;
+  background: RGBA(20,20,20,0.8);
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.box:hover {
+  background: #BC3203;
+  transition: background 0.5s ease;
+}
+
+.stat p {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.label p {
+  color: grey;
+}
+
+
 
 #containernav ul {
   float: right;
@@ -33,10 +90,6 @@ h1, h2, h3 {
   background: #0F669F;
 }
 
-#solar-dictionary-tab ul {
-  width: 200px;
-  background:lightgrey;
-}
 .download {
   width: 100%;
   float: right;
@@ -50,30 +103,46 @@ h1, h2, h3 {
 }
 
 .pdf-icon p, img {
-  padding: 25px 0 0 10px;
+  padding: 8px 0 0 10px;
   float: left;
+  clear:both;
 }
 
-.alignvertically {
+.pdf-icon a {
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+  color: white;
+}
+.information {
+  float: left;
+  clear:both;
+}
+/*.alignvertically {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
+}*/
 
 .dictionary {
   float: right;
   width: 940px;
   padding: 10px;
-  background: ligthgrey;
 }
 
 #solar-dictionary-tab ul { 
   float: left;
   height: 450px;
   overflow: auto;
-
+  width: 200px;
+  background: white;
 }
 
 #solar-dictionary-tab a {
   display: block;
+  padding: 5px;
+}
+
+#solar-dictionary-tab ul li a {
+  color: black;
 }
