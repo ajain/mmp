@@ -1,0 +1,26 @@
+%h1 Solar FAQ
+.download
+	.pdf-icon
+		= image_tag('pdf-icon-32px.png') 
+		<a href="http://www.MuellerAustin.com/" target="_blank">Download the full Solar FAQ</a>
+%ul
+	%li
+		%a{:href => "#q1", :id => "q1-id"}How does shade affect a solar array?
+	%li
+		%a{:href => "q2"}How long do solar panels last?
+	%li
+		%a{:href => "#q3", :id => "q3-id"} How much does the power producing capacity of solar panels decrease over time?
+
+.faq#q1
+	%h2 How does shade affect a solar array?
+	%p Shading is not well tolerated by solar arrays. If as little as 10% of a solar array is shaded (by a structure such as a chimney or tree), output can drop as much as 50%. This has to do with how solar arrays are wired. Because solar panels are wired in series within a given string (Every solar installation is wired in strings to compose the total array, for instance, for a 27 panels system could be 3 strings of 9), if one solar panels in a string is shaded, damaged, or otherwise out of commission, the entire string can be running sub-optimally, causing the inverter to ignore the string all together. Additionally, the individual cells that compose a solar panel are wired in series, meaning a small amount of shading on a panel can cause a disproportionately large drop in output, inevitably reducing the other panels on the strings ability to produce power.
+	%br
+	%p There are many resources online concerning shading. The below article explains the shading problem well.
+
+	%a http://www.renewableenergyworld.com/rea/news/article/2009/02/shade-happens-54551
+.faq#q2
+	%h2 How long do solar panels last?
+	%p Incredibly, no one really knows how long solar panels last. This is not only because the technology is relatively new, but also because many of the panels first built are still producing electricity. In light of this, the better question to ask is:
+.faq#q3
+	%h2 How much does the power producing capacity of solar panels decrease over time?
+	%p The production ability of all solar panels degrade over time due to the effect UV light has on silicon. Most large manufacturers have 20 or 25 year solar production warranties. Structured to accommodate the degradation of silicone due to UV light, these warranties typically warranty a certain level percent of initial production at certain time intervals.

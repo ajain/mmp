@@ -7,10 +7,9 @@
 			%a{:href => "#solar-dictionary-tab", :id => "solar-dictionary"}Solar Dictionary
 		%li
 			%a{:href => "#useful-links-tab", :id => "useful-links"}Useful Links	
-	.content#solar-faq-tab
-		%h1 Solar FAQ
-		%p "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-	.content#solar-dictionary-tab
+	.content#solar-faq-tab.list
+		= render partial: 'shared/solarfaq'
+	.content#solar-dictionary-tab.list
 		= render partial: 'shared/solardictionary'
 	.content#useful-links-tab 
 		%h1 Useful Links 

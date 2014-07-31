@@ -55,24 +55,6 @@ $(function($) {
 
 });
 
-// $(function($) {
-//   function changeDictionaryTab(e) {
-//     e.preventDefault();
-//     $("#solar-dictionary-tab>ul>li>a.active").removeClass("active");
-//     $(this).addClass("active");
-//     showDictionaryTab($(this).attr("href"));
-
-//   }
-
-//   function showDictionaryTab(activeDiv) {
-//     $("#solar-dictionary-tab>div").hide();
-//     $(activeDiv).show();
-//   }
-
-//   $("#solar-dictionary-tab>ul>li>a").click(changeDictionaryTab);
-//   $("#solar-dictionary-tab>ul>li:eq(0)>a").click();
-
-// });
 
 $(function($) {
   function changeDictionaryTab(e) {
@@ -91,5 +73,44 @@ $(function($) {
 
   $("#solar-dictionary-tab>ul>li>a").click(changeDictionaryTab);
   $("#solar-dictionary-tab>ul>li:eq(0)>a").click();
+
+});
+
+$(function($) {
+  function changefaqTab(e) {
+    e.preventDefault();
+    $("#solar-faq-tab>ul>li>a.active").removeClass("active");
+    $(this).addClass("active");
+    showfaqTab($(this).attr("href"));
+
+  }
+
+  function showfaqTab(activefaqDiv) {
+    $("#solar-faq-tab>div").hide();
+    $(activefaqDiv).show();
+    $(".download").show();
+  }
+
+  $("#solar-faq-tab>ul>li>a").click(changefaqTab);
+  $("#solar-faq-tab>ul>li:eq(0)>a").click();
+
+});
+
+$(function($) {
+  function changeInstallationsTab(e) {
+    e.preventDefault();
+    $("#installations-tab>ul>li>a.active").removeClass("active");
+    $(this).addClass("active");
+    showInstallationsTab($(this).attr("href"));
+
+  }
+
+  function showInstallationsTab(activeDiv) {
+    $("#installations-tab>div").hide();
+    $(activeDiv).show();
+  }
+
+  $("#installations-tab>ul>li>a").click(changeInstallationsTab);
+  $("#installations-tab>ul>li:eq(0)>a").click();
 
 });

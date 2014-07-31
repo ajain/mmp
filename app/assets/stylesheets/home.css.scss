@@ -32,6 +32,7 @@ h1, h2, h3 {
   padding: 10px 0 0 20px;
   text-align: center;
   margin-left: 180px;
+  padding-bottom: 20px;
 
 }
 
@@ -50,22 +51,30 @@ h1, h2, h3 {
 
 }
 
+.achieved {
+  margin-left: 20px;
+}
+
 .goal>p, .achieved>p {
   font-size: 40px;
   padding-top: 50px;
   padding-right: 20px;
   padding-bottom: 20px;
+  border-bottom: 4px solid #79B0D4;
 }
 .box {
   height: 75px;
-  width: 150px;
+  width: 140px;
   background: RGBA(20,20,20,0.8);
   float: left;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin: 12px;
   padding: 15px;
+  padding-top: 35px;
 }
 
+.box#capacity {
+  margin-left: 12px;
+}
 .box:hover {
   background: #BC3203;
   transition: background 0.5s ease;
@@ -86,9 +95,13 @@ h1, h2, h3 {
   float: right;
 }
 
-.section#resources {
+#resources {
   background: #0F669F;
 }
+
+/*#installations {
+  background: #BC6A03;
+}*/
 
 .download {
   width: 100%;
@@ -130,19 +143,37 @@ h1, h2, h3 {
   padding: 10px;
 }
 
-#solar-dictionary-tab ul { 
+.list ul { 
   float: left;
   height: 450px;
   overflow: auto;
-  width: 200px;
   background: white;
+  margin-right: 40px; /*Padding to the right of the FAQ & Dictionary lists*/
 }
 
-#solar-dictionary-tab a {
+#solar-faq-tab ul {
+  width: 580px;
+}
+
+#solar-dictionary-tab ul {
+  width: 200px;
+}
+
+.list a {
   display: block;
-  padding: 5px;
+  padding: 8px;
 }
 
-#solar-dictionary-tab ul li a {
+.list ul li a {
   color: black;
+}
+
+#contact-us {
+  border-top: 1px solid #77DBAB;
+  background: black;
+  height: 20px;
+}
+
+#contact-us-tab p {
+  float: right;
 }
