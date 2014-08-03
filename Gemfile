@@ -32,6 +32,10 @@ gem 'jquery-ui-rails'
 #For Heroku to work
 gem 'rails_12factor', group: :production
 
+group :assets do
+  gem 'less'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

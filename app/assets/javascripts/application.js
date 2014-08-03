@@ -13,7 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jgallery.min
+//= require tinycolor-0.9.16.min
 //= require_tree .
+
 
 
 
@@ -114,3 +117,17 @@ $(function($) {
   $("#installations-tab>ul>li:eq(0)>a").click();
 
 });
+
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "transition":"scaleDownCenter_scaleUpCenter",
+        "transitionBackward":"scaleDownUp_scaleUp",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "thumbnailsPosition":"left",
+        "thumbType":"image",
+        "backgroundColor":"black",
+        "textColor":"white",
+        "mode":"standard"
+    } );
+} );
