@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
@@ -32,10 +32,11 @@ gem 'jquery-ui-rails'
 #For Heroku to work
 gem 'rails_12factor', group: :production
 
-group :assets do
-  gem 'less'
-end
+# group :assets do
+#   gem 'less'
+# end
 
+gem 'mail_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
