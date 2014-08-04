@@ -1,9 +1,15 @@
 %h1 Pictures
 
-#gallery
-	.album{:'data-jgallery-album-title' => "Album 1"}
-		%h1 Album 1
-		%a{href: "http://jgallery.jakubkowalczyk.pl/images/large/10.jpg"}
-			%img{alt: "Source: Mueller Megawatt Project", "data-jgallery-bg-color" => "#3e3e3e", "data-jgallery-text-color" => "#fff", src: "http://jgallery.jakubkowalczyk.pl/images/thumbs/10.jpg"}
-		%a{href: "http://jgallery.jakubkowalczyk.pl/images/large/1.jpg"}
-			%img{alt: "Source: Pixabay.com", "data-jgallery-bg-color" => "#3e3e3e", "data-jgallery-text-color" => "#fff", src: "http://jgallery.jakubkowalczyk.pl/images/thumbs/1.jpg"}
+/ #gallery
+/ 	.album{:'data-jgallery-album-title' => "Album 1"}
+/ 		%h1 Album 1
+/ 		%a{href: "http://jgallery.jakubkowalczyk.pl/images/large/10.jpg"}
+/ 			%img{alt: "Source: Mueller Megawatt Project", "data-jgallery-bg-color" => "#3e3e3e", "data-jgallery-text-color" => "#fff", src: "http://jgallery.jakubkowalczyk.pl/images/thumbs/10.jpg"}
+/ 		%a{href: "http://jgallery.jakubkowalczyk.pl/images/large/1.jpg"}
+/ 			%img{alt: "Source: Pixabay.com", "data-jgallery-bg-color" => "#3e3e3e", "data-jgallery-text-color" => "#fff", src: "http://jgallery.jakubkowalczyk.pl/images/thumbs/1.jpg"}
+
+%ul#lightSlider
+	%li{"data-thumb" => "/assets/MKJ1.jpg"}
+		= image_tag('MKJ1.jpg')
+	%li{"data-thumb" => "/assets/MKJ2.jpg"}
+		= image_tag('MKJ2.jpg')

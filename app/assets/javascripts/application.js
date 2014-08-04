@@ -12,9 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require lightSlider.min
 //= require turbolinks
-//= require jgallery.min
-//= require tinycolor-0.9.16.min
 //= require_tree .
 
 
@@ -99,35 +98,47 @@ $(function($) {
 
 });
 
-$(function($) {
-  function changeInstallationsTab(e) {
-    e.preventDefault();
-    $("#installations-tab>ul>li>a.active").removeClass("active");
-    $(this).addClass("active");
-    showInstallationsTab($(this).attr("href"));
+// $(function($) {
+//   function changeInstallationsTab(e) {
+//     e.preventDefault();
+//     $("#installations-tab>ul>li>a.active").removeClass("active");
+//     $(this).addClass("active");
+//     showInstallationsTab($(this).attr("href"));
 
-  }
+//   }
 
-  function showInstallationsTab(activeDiv) {
-    $("#installations-tab>div").hide();
-    $(activeDiv).show();
-  }
+//   function showInstallationsTab(activeDiv) {
+//     $("#installations-tab>div").hide();
+//     $(activeDiv).show();
+//   }
 
-  $("#installations-tab>ul>li>a").click(changeInstallationsTab);
-  $("#installations-tab>ul>li:eq(0)>a").click();
+//   $("#installations-tab>ul>li>a").click(changeInstallationsTab);
+//   $("#installations-tab>ul>li:eq(0)>a").click();
 
+// });
+
+$(document).ready(function() {
+  $("#lightSlider").lightSlider({
+    gallery: true, 
+    minSlide:1,
+    maxSlide:1,
+    currentPagerPosition: 'left',
+    slideWidth: 1200,
+    thumbWidth: 100,
+    currentPagerPosition: 'middle',
+  });
 });
 
-$( function(){
-    $( "#gallery" ).jGallery( {
-        "transition":"scaleDownCenter_scaleUpCenter",
-        "transitionBackward":"scaleDownUp_scaleUp",
-        "transitionCols":"1",
-        "transitionRows":"1",
-        "thumbnailsPosition":"left",
-        "thumbType":"image",
-        "backgroundColor":"black",
-        "textColor":"white",
-        "mode":"standard"
-    } );
-} );
+// $( function(){
+//     $( "#gallery" ).jGallery( {
+//         "transition":"scaleDownCenter_scaleUpCenter",
+//         "transitionBackward":"scaleDownUp_scaleUp",
+//         "transitionCols":"1",
+//         "transitionRows":"1",
+//         "thumbnailsPosition":"left",
+//         "thumbType":"image",
+//         "backgroundColor":"black",
+//         "textColor":"white",
+//         "mode":"standard"
+//     } );
+// } );
