@@ -9,6 +9,7 @@ $hoveractive: #07AD5D;
 	height: 48px;
 	width: 100%;
     border-bottom: 1px dotted #094c78;
+    z-index: 5;
 }
 
 
@@ -33,7 +34,7 @@ $hoveractive: #07AD5D;
 
 	li a {
 		padding: 6px;
-		background: /*#102A7F*/white;
+		background: white;
 	}
 
     li:hover {
