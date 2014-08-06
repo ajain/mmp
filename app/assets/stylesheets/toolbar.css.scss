@@ -1,16 +1,21 @@
 $activecolor: #028345;
 $hoveractive: #07AD5D;
+$toolbarheight: 48px;
 /*$activecolor: #07AD5D;*/
 
 .toolbar {
 	padding: 5px 0 5px 0;
 	background: black;
 	position: fixed;
-	height: 48px;
+	height: $toolbarheight;
 	width: 100%;
     border-bottom: 1px dotted #094c78;
-    z-index: 5;
+    z-index: 1000;
 }
+
+/*body {
+    padding-top: $toolbarheight + 10px;
+}*/
 
 
 .logo {
@@ -61,7 +66,7 @@ $hoveractive: #07AD5D;
 	color: white !important;
 }
 
-#nav-main a:hover, #sub-nav a:hover, .list a:hover {
+#nav-main a:hover, #sub-nav a:hover, .list ul#sub-nav a:hover {
     color: white;
     background:$activecolor;
 }

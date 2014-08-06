@@ -112,8 +112,8 @@ $(function($) {
 //     $(activeDiv).show();
 //   }
 
-//   $("#installations-tab>ul>li>a").click(changeInstallationsTab);
-//   $("#installations-tab>ul>li:eq(0)>a").click();
+//   $("#installations-tab>ul#sub-nav>li>a").click(changeInstallationsTab);
+//   $("#installations-tab>ul#sub-nav>li:eq(0)>a").click();
 
 // });
 
@@ -122,23 +122,8 @@ $(document).ready(function() {
     gallery: true, 
     minSlide:1,
     maxSlide:1,
-    currentPagerPosition: 'left',
-    slideWidth: 1200,
+    slideWidth: 800,
     thumbWidth: 100,
     currentPagerPosition: 'middle',
   });
 });
-
-// $( function(){
-//     $( "#gallery" ).jGallery( {
-//         "transition":"scaleDownCenter_scaleUpCenter",
-//         "transitionBackward":"scaleDownUp_scaleUp",
-//         "transitionCols":"1",
-//         "transitionRows":"1",
-//         "thumbnailsPosition":"left",
-//         "thumbType":"image",
-//         "backgroundColor":"black",
-//         "textColor":"white",
-//         "mode":"standard"
-//     } );
-// } );

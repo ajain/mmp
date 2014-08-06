@@ -1,8 +1,8 @@
-.div
-	- flash.each do |key, value|
-		%div
-			%a{"data-dismiss" => "alert", href: "#"} ×
-			= value
+/ .div
+/ 	- flash.each do |key, value|
+/ 		%div
+/ 			%a{"data-dismiss" => "alert", href: "#"} ×
+/ 			= value
 .contact_form
 	= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
 		= f.input :name, :required => true

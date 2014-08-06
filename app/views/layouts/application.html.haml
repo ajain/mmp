@@ -5,6 +5,17 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
+
   %body
-    = render partial: 'shared/toolbar'
-    = yield
+  / <p class="notice"><%= notice %></p>
+  / <p class="alert"><%= alert %></p>
+  .container
+
+  - flash.each do |name, msg|
+    - if msg.is_a?(String)
+      %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+        %a.close{"data-dismiss" => "alert"}
+          &times;
+        = content_tag :div, msg, :id => "flash_#{name}"
+  = render partial: 'shared/toolbar'
+  = yield

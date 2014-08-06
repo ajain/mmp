@@ -162,13 +162,14 @@ h1, h2, h3 {
   width: 200px;
 }
 
-.list a {
-  display: block;
-  padding: 8px;
+.list ul li a {
+
 }
 
-.list ul li a {
+.list ul#sub-nav li a, #resources-tab ul li a {
   color: black;
+  display: block;
+  padding: 8px;
 }
 
 #installations {
