@@ -15,11 +15,14 @@
 //= require lightSlider.min
 //= require turbolinks
 //= require_tree .
+//= require waypoints.min
 
 
 
 
-jQuery(function($) {
+// FOR ABOUT SUB-NAV
+
+$(function($) {
   function changeAboutTab(e) {
     e.preventDefault();
     $("#about-tab>ul>li>a.active").removeClass("active");
@@ -38,6 +41,7 @@ jQuery(function($) {
 
 });
 
+// FOR RESOURCES SUB-NAV
 $(function($) {
   function changeResourcesTab(e) {
     e.preventDefault();
@@ -57,7 +61,7 @@ $(function($) {
 
 });
 
-
+// FOR THE DICTIONARY SELECTOR
 $(function($) {
   function changeDictionaryTab(e) {
     e.preventDefault();
@@ -78,6 +82,7 @@ $(function($) {
 
 });
 
+// FOR THE FAQ SELECTOR
 $(function($) {
   function changefaqTab(e) {
     e.preventDefault();
@@ -98,32 +103,51 @@ $(function($) {
 
 });
 
-// $(function($) {
-//   function changeInstallationsTab(e) {
-//     e.preventDefault();
-//     $("#installations-tab>ul>li>a.active").removeClass("active");
-//     $(this).addClass("active");
-//     showInstallationsTab($(this).attr("href"));
 
-//   }
-
-//   function showInstallationsTab(activeDiv) {
-//     $("#installations-tab>div").hide();
-//     $(activeDiv).show();
-//   }
-
-//   $("#installations-tab>ul#sub-nav>li>a").click(changeInstallationsTab);
-//   $("#installations-tab>ul#sub-nav>li:eq(0)>a").click();
-
-// });
 
 $(document).ready(function() {
   $("#lightSlider").lightSlider({
-    gallery: true, 
+    slideMargin:20,
+    gallery:true,
+    currentPagerPosition:'middle',
+    slideMove:1,
     minSlide:1,
     maxSlide:1,
-    slideWidth: 800,
-    thumbWidth: 100,
-    currentPagerPosition: 'middle',
-  });
+   });
+});
+
+$(document).ready(function(){
+$('#nav-main>li>a').click(
+    function(e)
+    {
+        $('#nav-main>li>a').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    }
+);
+});
+
+$(function($) {
+  function changeInstallationsTab(e) {
+    e.preventDefault();
+    $("#installations-tab>ul>li>a.active").removeClass("active");
+    $(this).addClass("active");
+    showInstallationsTab($(this).attr("href"));
+
+  }
+
+  function showInstallationsTab(activeDiv) {
+    $("#installations-tab>div").hide();
+    $(activeDiv).show();
+  }
+
+  $("#installations-tab>ul#sub-nav>li>a").click(changeInstallationsTab);
+  $("#installations-tab>ul#sub-nav>li:eq(0)>a").click();
+
+});
+
+
+
+// WAYPOINTS - couldn't get this to work
+$('').waypoint(function() {
+  notify('Basic example callback triggered.');
 });

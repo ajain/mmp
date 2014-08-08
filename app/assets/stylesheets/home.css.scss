@@ -92,7 +92,14 @@ h1, h2, h3 {
 }
 
 
-
+#courtesy {
+/*  float: right;
+  margin-top: 100px;
+  padding-right: 30px;*/
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+}
 #containernav ul {
   float: right;
 }
@@ -118,7 +125,7 @@ h1, h2, h3 {
   float: left;
 }
 
-.pdf-icon p, img {
+.pdf-icon p, .pdf-icon img {
   padding: 8px 0 0 10px;
   float: left;
   clear:both;
@@ -172,8 +179,25 @@ h1, h2, h3 {
   padding: 8px;
 }
 
-#installations {
-  height: 1000px;
+#lightslider {
+  margin: 0 auto;
 }
 
+.csSlideOuter {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#thanks-footer {
+  background: black;
+  float: left;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  li {
+    float: left;
+    padding: 10px;
+
+  }
+}
 
