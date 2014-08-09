@@ -10,7 +10,7 @@ h1, h2, h3 {
 }
 
 .section {
-  height: 800px;
+  height: 700px;
   width: 100%;
   }
 
@@ -31,7 +31,7 @@ h1, h2, h3 {
   width: 782px;
   float: left;
   text-shadow: 1px 1px black;
-  padding: 100px 0 0 20px;
+  padding: 50px 0 0 20px;
   text-align: center;
   margin-left: 180px;
   padding-bottom: 20px;
@@ -62,7 +62,7 @@ h1, h2, h3 {
   padding-top: 50px;
   padding-right: 20px;
   padding-bottom: 20px;
-  border-bottom: 4px solid #79B0D4;
+  border-bottom: 4px solid grey;
 }
 .box {
   height: 75px;
@@ -97,7 +97,7 @@ h1, h2, h3 {
   margin-top: 100px;
   padding-right: 30px;*/
   position: absolute;
-  bottom: -50px;
+  top: 690px;
   right: 20px;
 }
 #containernav ul {
@@ -199,5 +199,13 @@ h1, h2, h3 {
     padding: 10px;
 
   }
+}
+
+.submit {
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: lightgrey;
 }
 

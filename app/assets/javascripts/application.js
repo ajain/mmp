@@ -109,6 +109,7 @@ $(document).ready(function() {
   $("#lightSlider").lightSlider({
     slideMargin:20,
     gallery:true,
+    thumbWidth:100,
     currentPagerPosition:'middle',
     slideMove:1,
     minSlide:1,

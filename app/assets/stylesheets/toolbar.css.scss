@@ -54,19 +54,19 @@ $toolbarheight: 48px;
 	background: white;
 	text-decoration: none;
 	color: black;
-
+    transition: background 0.5s ease;
 }
 
 #nav-main li a {
     font-size: 16px;
 }
 
-#nav-main .active, #sub-nav .active {
+#nav-main .active, #sub-nav .active, #solar-dictionary .active, #solar-faq .active {
 	background: $activecolor !important;
 	color: white !important;
 }
 
-#nav-main a:hover, #sub-nav a:hover, .list ul#sub-nav a:hover {
+#nav-main a:hover, #sub-nav a:hover, .list ul#sub-nav a:hover, #solar-dictionary a:hover, #solar-faq a:hover {
     color: white;
     background:$activecolor;
 }
