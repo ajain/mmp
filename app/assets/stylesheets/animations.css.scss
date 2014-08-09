@@ -25,7 +25,7 @@ $delay-five: -10s;
 .cloud1 {
     -webkit-animation: cloudone $speed-one linear $delay-one infinite;
        -moz-animation: cloudone $speed-one linear $delay-one infinite;
-        -ms-animation: cloudone $speed-one linear $delay-one infinite;
+/*        -ms-animation: cloudone $speed-one linear $delay-one infinite;*/
          -o-animation: cloudone $speed-one linear $delay-one infinite;
             animation: cloudone $speed-one linear $delay-one infinite;
 }
@@ -33,7 +33,7 @@ $delay-five: -10s;
 .cloud2 {
     -webkit-animation: cloudtwo $speed-two linear $delay-two infinite;
        -moz-animation: cloudtwo $speed-two linear $delay-two infinite;
-        -ms-animation: cloudtwo $speed-two linear $delay-two infinite;
+/*        -ms-animation: cloudtwo $speed-two linear $delay-two infinite;*/
          -o-animation: cloudtwo $speed-two linear $delay-two infinite;
             animation: cloudtwo $speed-two linear $delay-two infinite;
 }
@@ -42,7 +42,7 @@ $delay-five: -10s;
 .cloud3 {
     -webkit-animation: cloudthree $speed-three linear $delay-three infinite;
        -moz-animation: cloudthree $speed-three linear $delay-three infinite;
-        -ms-animation: cloudthree $speed-three linear $delay-three infinite;
+/*        -ms-animation: cloudthree $speed-three linear $delay-three infinite;*/
          -o-animation: cloudthree $speed-three linear $delay-three infinite;
             animation: cloudthree $speed-three linear $delay-three infinite;
 }
@@ -51,7 +51,7 @@ $delay-five: -10s;
 .cloud4 {
     -webkit-animation: cloudfour $speed-four linear $delay-four infinite;
        -moz-animation: cloudfour $speed-four linear $delay-four infinite;
-        -ms-animation: cloudfour $speed-four linear $delay-four infinite;
+/*        -ms-animation: cloudfour $speed-four linear $delay-four infinite;*/
          -o-animation: cloudfour $speed-four linear $delay-four infinite;
             animation: cloudfour $speed-four linear $delay-four infinite;
 }
@@ -60,14 +60,14 @@ $delay-five: -10s;
 .cloud5 {
     -webkit-animation: cloudfive $speed-five linear $delay-five infinite;
        -moz-animation: cloudfive $speed-five linear $delay-five infinite;
-        -ms-animation: cloudfive $speed-five linear $delay-five infinite;
+/*        -ms-animation: cloudfive $speed-five linear $delay-five infinite;*/
          -o-animation: cloudfive $speed-five linear $delay-five infinite;
             animation: cloudfive $speed-five linear $delay-five infinite;
 }
 
 
 /*CLOUD ONE*/ 
-@keyframes "cloudone" {
+@keyframes cloudone {
  0% {
     margin-left: -400px;
  }
@@ -99,7 +99,7 @@ $delay-five: -10s;
  
 }
  
-@-ms-keyframes "cloudone" {
+/*@-ms-keyframes "cloudone" {
  0% {
    margin-left: -400px;
  }
@@ -107,7 +107,7 @@ $delay-five: -10s;
    margin-left: 1800px;
  }
  
-}
+}*/
  
 @-o-keyframes "cloudone" {
  0% {
