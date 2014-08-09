@@ -10,120 +10,18 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require reset
+ *= require fonts
+ *= require general
+ *= require alerts
  *= require contactus
- *= require_self
- *= require_
- *= require lightSlider	
+ *= require lightSlider
+ *= require toolbar	
  *= require_tree .
+
+
 
  */
 
 
-h1 {
-	color: #FFA93C;
-/*	color: #77DBAB;*/
-	font-size: 36px;
-	text-decoration: bold;
-}
-
-
-h2, h3, h4 {
-/*	color: #B5EC0A;*/
-	color: #77DBAB;
-	font-size: 24px;
-}
-
-h1, h2, h3, h4 {
-	padding-bottom: 15px;
-}
-p {
-	color:white;
-	line-height: 20px;
-}
-
-a {
-	color: #79B0D4;
-	text-decoration: none;
-}
-
-a:hover {
-  color: #4E91BC;
-}
-
-p, ul, table, h1, h2, h3, h4, a, input, label, textarea, alert {
-	font-family: 'open_sansLight', Arial, sans-serif;
-}
-
-/*h1, h2, h3, h4 {
-	font-family: 'open_sansSemibold', Arial, sans-serif;
-}*/
-body {
-	background: url(asset-path('Mueller-Megawatt-Project.jpg')) top center no-repeat, black;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-}
-
-/* 	-webkit-filter: contrast(4);
-	filter: contrast(4);*/
-.container {
-	margin: 0 auto;
-	width: 1200px;
-}
-
-.hidden { 
-	display: none; 
-}
-
-.section {
-	padding-top: 40px; /*So that the logo doesn't overlap the title of the tabs*/
-}
-
-.anchor:before {
-  content:"";
-  display:block;
-  height:98px; /* fixed header height*/
-  margin:-98px 0 0; /* negative fixed header height */
-}
-
-
-  /*flash*/
-
-.alerts {
-	background-color: #ffb960;
-}
-
-.alert-error {
-	width: 1200px;
-	text-align: left;
-	margin: 0 auto;
-	padding: 10px;
-}
-
-.alerts .close {
-	float: left;
-}
-
-#flash-notice {
-	padding-left: 15px;
-}
-
-.alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
-
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}
-
-.alert-notice {
-background-color: #77DBAB;
-color: white;
-text-align: left;
-}
 

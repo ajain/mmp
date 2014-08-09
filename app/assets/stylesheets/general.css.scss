@@ -1,0 +1,74 @@
+
+h1 {
+	color: #FFA93C;
+/*	color: #77DBAB;*/
+	font-size: 36px;
+	text-decoration: bold;
+}
+
+
+h2, h3, h4 {
+/*	color: #B5EC0A;*/
+	color: #77DBAB;
+	font-size: 24px;
+}
+
+h1, h2, h3, h4 {
+	padding-bottom: 15px;
+}
+p {
+	color:white;
+	line-height: 20px;
+}
+
+a {
+	color: #79B0D4;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #4E91BC;
+}
+
+p, ul, table, h1, h2, h3, h4, a, input, label, textarea, alert {
+	font-family: 'open_sansLight', Arial, sans-serif;
+}
+
+/*h1, h2, h3, h4 {
+	font-family: 'open_sansSemibold', Arial, sans-serif;
+}*/
+body {
+	background: url(asset-path('Mueller-Megawatt-Project.jpg')) top center no-repeat, black;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+h1, h2, h3 {
+  padding-bottom: 5px;
+}
+
+/* 	-webkit-filter: contrast(4);
+	filter: contrast(4);*/
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.hidden { 
+	display: none; 
+}
+
+.section {
+	padding-top: 40px; /*So that the logo doesn't overlap the title of the tabs*/
+	height: 700px;
+	width: 100%;
+}
+
+.anchor:before {
+  content:"";
+  display:block;
+  height:98px; /* fixed header height*/
+  margin:-98px 0 0; /* negative fixed header height */
+}
+
+
