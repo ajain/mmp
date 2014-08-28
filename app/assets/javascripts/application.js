@@ -15,7 +15,7 @@
 //= require lightSlider.min
 //= require turbolinks
 //= require_tree .
-//= require waypoints.min
+//= require waypoints
 
 
 
@@ -147,8 +147,7 @@ $(function($) {
 });
 
 
-
 // WAYPOINTS - couldn't get this to work
-$('').waypoint(function() {
+$('#installations').waypoint(function() {
   notify('Basic example callback triggered.');
 });

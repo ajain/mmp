@@ -7,6 +7,8 @@
 		%li
 			%a{:href => "#press-tab", :id => "press"}Press
 		%li
+			%a{:href => "#who-tab", :id => "who"}Who We are
+		%li
 			%a{:href => "#thanks-tab", :id => "thanks"}Thanks
 		%li
 			%a{:href => "#disclosure-tab", :id => "disclosure"}Disclosure
@@ -56,9 +58,19 @@
 
 	#timeline-tab 	
 		%h1 Timeline
+		.timeline
+			%p This is timeline content.
 	#press-tab 
 		%h1 Press
+		.press
+			%p This is press content.
+	#who-tab
+		= render partial: 'shared/who'
 	#thanks-tab 
 		%h1	Thanks
+		%p This is thanks content.
+	#disclosure-tab 
+		%h1	Disclosure
+		%p This is disclosure content.
 #courtesy
 	%p Photo Courtesy of: <a href="http://www.pecanstreet.org/" target="_blank">Pecan Street, Inc.</a> 

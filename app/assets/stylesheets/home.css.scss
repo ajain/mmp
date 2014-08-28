@@ -66,10 +66,10 @@
 .box#capacity {
   margin-left: 12px;
 }
-.box:hover {
+/*.box:hover {
   background: #BC3203;
   transition: background 0.5s ease;
-}
+}*/
 
 .stat p {
   font-size: 26px;
@@ -80,6 +80,39 @@
   color: grey;
 }
 
+#who-tab>p {
+  font-size: 20px;
+}
+
+#who_we_are {
+  margin: 0 auto;
+  padding-top: 50px;
+
+  li {
+/*    background: rgba(0,0,0,0.2);*/
+    width: 380px;
+    height: 200px;
+    margin: 10px;
+    display: block;
+    float: left;
+    padding-top: 10px;
+
+    .headshot {
+      float: left;
+
+      img {
+        border-bottom: 5px solid #0F669F;
+      }
+    }
+
+    .bio {
+      float: left;
+      padding-left: 10px;
+      width: 250px;
+    }
+  }
+
+}
 
 #courtesy {
 /*  float: right;
@@ -183,10 +216,17 @@
   width: 100%;
   color: white;
   font-size: 12px;
+  
   li {
     float: left;
     padding: 10px;
+  }
 
+  p {
+    float: right;
+    padding-top: 6px;
+    padding-right: 10px;
+    color: grey;
   }
 }
 
@@ -198,3 +238,18 @@
   background: lightgrey;
 }
 
+.home>a {
+  height: 100px;
+  background: #3b5998;
+  width: 100%;
+  float: left;
+}
+
+.addyourinstall {
+  padding-top: 15px;
+  float: right;
+
+  p {
+    color: lightgrey;
+  }
+}

@@ -6,10 +6,14 @@
 		%li
 			%a{:href => "#solar-dictionary-tab", :id => "solar-dictionary"}Solar Dictionary
 		%li
+			%a{:href => "#tens-steps-tab", :id => "ten-steps"}Mueller 10 Steps to Go Solar
+		%li
 			%a{:href => "#useful-links-tab", :id => "useful-links"}Useful Links	
 	.content#solar-faq-tab.list
 		= render partial: 'shared/solarfaq'
 	.content#solar-dictionary-tab.list
 		= render partial: 'shared/solardictionary'
+	.content#solar-dictionary-tab.list
+		= render partial: 'shared/tensteps'
 	.content#useful-links-tab 
 		%h1 Useful Links 

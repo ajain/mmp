@@ -7,9 +7,16 @@
 
 	.section#installations
 		= render partial: 'shared/installations'
-		
+	
+
+
 	.gradient
 		.section#contact-us
 			= render partial: 'shared/contactus'
+	%a{ href: 'https://www.facebook.com/muellermegawatt', title: "Mueller Megawatt is on Facebook!", target: "blank" }
+
+		.center
+			%p Find us on
+			= image_tag('facebook_logo.png')
 	.thanks
 		= render partial: 'shared/thanks'
