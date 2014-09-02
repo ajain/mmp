@@ -114,6 +114,22 @@
 
 }
 
+#thanks-tab {
+  p {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  ul {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  li {
+    float: left;
+  }
+}
+
 #courtesy {
 /*  float: right;
   margin-top: 100px;
