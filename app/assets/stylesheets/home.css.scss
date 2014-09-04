@@ -16,11 +16,15 @@
 #about-tab {
   padding-top: 65px;
 }
+
+#about-tab h1 {
+  padding-bottom: 60px
+}
 .about-paragraph {
   width: 782px;
   float: left;
   text-shadow: 1px 1px black;
-  padding: 50px 0 0 20px;
+/*  padding: 50px 0 0 20px;*/
   text-align: center;
   margin-left: 180px;
   padding-bottom: 20px;
@@ -86,7 +90,7 @@
 
 #who_we_are {
   margin: 0 auto;
-  padding-top: 50px;
+/*  padding-top: 50px;*/
 
   li {
 /*    background: rgba(0,0,0,0.2);*/
@@ -117,11 +121,12 @@
 #thanks-tab {
   p {
     text-align: center;
-    padding-top: 50px;
+/*    padding-top: 50px;*/
+    padding-bottom: 30px;
   }
 
   ul {
-    width: 500px;
+    width: 900px;
     margin: 0 auto;
   }
 
