@@ -51,6 +51,7 @@ h1, h2, h3 {
 .container {
 	margin: 0 auto;
 	width: 1200px;
+
 }
 
 .hidden { 
@@ -61,6 +62,7 @@ h1, h2, h3 {
 	padding-top: 40px; /*So that the logo doesn't overlap the title of the tabs*/
 	height: 700px;
 	width: 100%;
+	min-width:1200px;  /*So it displays properly on iPhone/iPad*/
 }
 
 .anchor:before {
