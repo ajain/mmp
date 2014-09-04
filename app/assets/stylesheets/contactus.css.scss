@@ -44,6 +44,7 @@ textarea {
 }
 
 .gradient {
+  min-width: 1200px;
   background: #d6eff6; /* Old browsers */
   background: -moz-linear-gradient(top, #d6eff6 0%, #f3f7d8 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6eff6), color-stop(100%,#f3f7d8)); /* Chrome,Safari4+ */
