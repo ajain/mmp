@@ -107,13 +107,14 @@ $(function($) {
 
 $(document).ready(function() {
   $("#lightSlider").lightSlider({
+    slideWidth: 900,
     slideMargin:20,
     gallery:true,
     thumbWidth:100,
     currentPagerPosition:'middle',
     slideMove:1,
     minSlide:1,
-    maxSlide:1,
+    maxSlide:1
    });
 });
 

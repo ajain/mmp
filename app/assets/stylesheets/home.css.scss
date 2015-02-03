@@ -126,13 +126,18 @@
   }
 
   ul {
-    width: 900px;
+    width: 500px;
     margin: 0 auto;
   }
 
   li {
     float: left;
   }
+
+  img {
+    padding-right: 20px;
+  }
+
 }
 
 #courtesy {
@@ -140,7 +145,7 @@
   margin-top: 100px;
   padding-right: 30px;*/
   position: absolute;
-  top: 690px;
+  top: 700px;
   right: 20px;
 }
 #containernav ul {
@@ -227,10 +232,13 @@
 }
 
 .csSlideOuter {
-  width: 900px;
+  width: 800px;
   margin: 0 auto;
 }
 
+#lightSlider {
+  padding-bottom: 15px;
+}
 #thanks-footer {
   background: black;
   float: left;
