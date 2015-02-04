@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 //= require waypoints
+//= require toolbar
 
 
 
@@ -152,3 +153,4 @@ $(function($) {
 $('#installations').waypoint(function() {
   notify('Basic example callback triggered.');
 });
+

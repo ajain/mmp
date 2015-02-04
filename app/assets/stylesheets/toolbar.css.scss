@@ -4,13 +4,13 @@ $toolbarheight: 48px;
 /*$activecolor: #07AD5D;*/
 
 .toolbar {
-	padding: 5px 0 5px 0;
+	padding: 0px 0 0px 0;
 	background: black;
-	position: fixed;
 	height: $toolbarheight;
 	width: 100%;
     border-bottom: 1px dotted #094c78;
     z-index: 1000;
+
 }
 
 /*body {
@@ -135,4 +135,26 @@ $toolbarheight: 48px;
     text-decoration:none;
 }
 
+a.pink{
+    background: #A6033A !important;
+}
+
+
+.banner { 
+    height: 50px;
+    background: #A6033A;
+    padding-top:20px;
+}
+
+.message {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 1200px;
+    padding: 3px;
+}
+
+.stick {
+    top: 0;
+    position: fixed;
+}
 
