@@ -1,31 +1,3 @@
-// function moveScroller() {
-//     var move = function() {
-//         var st = $(window).scrollTop();
-//         var ot = $(".toolbar-anchor").offset().top;
-//         var s = $(".toolbar");
-//         if(st > ot) {
-//             s.css({
-//                 position: "fixed",
-//                 top: "0px"
-//             });
-//         } else {
-//             if(st <= ot) {
-//                 s.css({
-//                     position: "relative",
-//                     top: ""
-//                 });
-//             }
-//         }
-//     };
-//     $(window).scroll(move);
-//     move();
-// }
-
-//   $(function() {
-//     moveScroller();
-//   });
-
-
 $(document).ready(function() {
     // Cache selectors for faster performance.
     var $window = $(window),

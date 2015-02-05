@@ -1,11 +1,11 @@
-$activecolor: #028345;
+$activecolor: #16a085;
 $hoveractive: #07AD5D;
 $toolbarheight: 48px;
 /*$activecolor: #07AD5D;*/
 
 .toolbar {
 	padding: 0px 0 0px 0;
-	background: black;
+	background: #2c3e50;
 	height: $toolbarheight;
 	width: 100%;
     border-bottom: 1px dotted #094c78;
@@ -135,14 +135,14 @@ $toolbarheight: 48px;
     text-decoration:none;
 }
 
-a.pink{
-    background: #A6033A !important;
+.emphasis{
+    background: #d35400 !important;
 }
 
 
 .banner { 
     height: 50px;
-    background: #A6033A;
+/*    background: #F98F09;*/
     padding-top:20px;
 }
 
@@ -151,6 +151,15 @@ a.pink{
     font-size: 20px;
     width: 1200px;
     padding: 3px;
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: lightgrey;
+    }
+
 }
 
 .stick {

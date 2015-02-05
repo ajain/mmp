@@ -17,6 +17,4 @@
           %a.close{"data-dismiss" => "alert"}
             &times;
           = content_tag :div, msg, :id => "flash_#{name}"
-  = render partial: 'shared/banner'
-  = render partial: 'shared/toolbar'
   = yield

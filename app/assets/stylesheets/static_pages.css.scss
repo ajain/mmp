@@ -1,0 +1,40 @@
+.welcome {
+
+	background: #e74c3c;
+	padding: 35px 10px;
+	border-bottom: 8px solid #c0392b;
+	float: left;
+	width: 100%;
+}
+
+.back {
+	float: left;
+}
+.title {
+	width: 550px;
+	margin: 0 auto;
+
+
+}
+
+.welcome img {
+	float: left;
+	padding-right: 8px;
+}
+
+.title p {
+	font-size: 50px;
+	padding-top: 5px;
+}
+
+.back p {
+	padding-top: 5px;
+
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: lightgrey;
+	}
+}

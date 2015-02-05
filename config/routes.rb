@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'go-solar-2015', to: 'static_pages#initiative', as: :initiative
+
   get 'home/index'
-  
+
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
