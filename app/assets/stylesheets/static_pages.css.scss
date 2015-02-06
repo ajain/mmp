@@ -112,30 +112,30 @@ $iconpadding: 35px;
 $iconsize: 5%;
 .comment-icon {
 	padding-left: $iconpadding;
-	background: url(icons/comment.png) no-repeat left center;
+	background: image-url("icons/comment.png") no-repeat left center;
 	background-size: $iconsize;
 }
 
 .roi-icon {
 	padding-left: $iconpadding;
-	background: url(icons/roi.png) no-repeat left center;
+	background: image-url("icons/roi.png") no-repeat left center;
 	background-size: $iconsize;
 }
 
 .search-icon {
 	padding-left: $iconpadding;
-	background: url(icons/search.png) no-repeat left center;
+	background: image-url("icons/search.png") no-repeat left center;
 	background-size: $iconsize;
 }
 
 .timer-icon {
 	padding-left: $iconpadding;
-	background: url(icons/timer.png) no-repeat left center;
+	background: image-url("icons/timer.png") no-repeat left center;
 	background-size: $iconsize;
 }
 
 .ok-icon {
 	padding-left: $iconpadding;
-	background: url(icons/ok.png) no-repeat left center;
+	background: image-url("icons/ok.png") no-repeat left center;
 	background-size: $iconsize;
 }
