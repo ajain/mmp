@@ -1,7 +1,7 @@
 .welcome {
 
 	background: #e74c3c;
-	padding: 35px 10px;
+	padding: 35px 0px;
 	border-bottom: 8px solid #c0392b;
 	float: left;
 	width: 100%;
@@ -28,6 +28,7 @@
 }
 
 .back p {
+	padding-left: 10px;
 	padding-top: 5px;
 
 	a {
@@ -37,4 +38,37 @@
 	a:hover {
 		color: lightgrey;
 	}
+}
+
+#solar-2015 {
+	background: #2c3e50;
+	height: 800px;
+
+}
+
+.linkbar {
+	width: 810px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+
+
+.linkbar li {
+	display:inline-block;	
+	background: #16a085;
+	margin: 10px;
+
+}
+
+.linkbar a {
+	color: white;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.linkbar .active {
+	background: #1abc9c;
+	border-left: 5px solid #f1c40f;
+	padding: 10px 20px 10px 15px !important;
 }

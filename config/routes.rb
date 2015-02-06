@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+  Rails.application.routes.draw do
   get 'go-solar-2015', to: 'static_pages#initiative', as: :initiative
 
   get 'home/index'
