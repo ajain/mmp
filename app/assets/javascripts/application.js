@@ -11,12 +11,14 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require lightSlider.min
-//= require turbolinks
+
 //= require_tree .
 //= require waypoints
 //= require toolbar
+//= require turbolinks
 
 
 

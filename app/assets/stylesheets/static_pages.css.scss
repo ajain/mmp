@@ -42,7 +42,8 @@
 
 #solar-2015 {
 	background: #2c3e50;
-	height: 800px;
+	height: 1200px;
+	color: white;
 
 }
 
@@ -71,4 +72,70 @@
 	background: #1abc9c;
 	border-left: 5px solid #f1c40f;
 	padding: 10px 20px 10px 15px !important;
+}
+
+#main-content h1 {
+	padding: 20px 0px 30px 0px;
+}
+
+#how-it-works-tab table {
+	width: 95%;
+	margin: 0 auto;
+}
+#how-it-works-tab td { 
+	vertical-align: middle;
+}
+
+#how-it-works-tab td:first-child {
+	width: 35px;
+}
+#how-it-works-tab>p {
+	padding-bottom: 30px;
+}
+
+#how-it-works-tab td {
+	font-size: 26px;
+/*	line-height: 100px;*/}
+#how-it-works-tab td:nth-child(3) {
+	padding: 20px 0px;
+	font-size: 16px;
+	line-height: 20px;
+	width: 600px;
+
+}
+
+#how-it-works-tab tr {
+	border-bottom: 1px dotted #95a5a6;
+}
+
+$iconpadding: 35px;
+$iconsize: 5%;
+.comment-icon {
+	padding-left: $iconpadding;
+	background: url(icons/comment.png) no-repeat left center;
+	background-size: $iconsize;
+}
+
+.roi-icon {
+	padding-left: $iconpadding;
+	background: url(icons/roi.png) no-repeat left center;
+	background-size: $iconsize;
+}
+
+.search-icon {
+	padding-left: $iconpadding;
+	background: url(icons/search.png) no-repeat left center;
+	background-size: $iconsize;
+}
+
+.timer-icon {
+	padding-left: $iconpadding;
+	background: url(icons/timer.png) no-repeat left center;
+	background-size: $iconsize;
+}
+
+.ok-icon {
+	padding-left: $iconpadding;
+	background: url(icons/ok.png) no-repeat left center;
+	background-size: $iconsize;
 }

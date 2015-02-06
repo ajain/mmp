@@ -1,7 +1,7 @@
 .welcome
 	.back
 		%p
-			=link_to "< Back", "http://muellermegawatt.org/"
+			=link_to "< Back", root_path
 	.title 
 		= image_tag('icons/sun.png')
 		%p MUELLER SOLAR 2015
@@ -13,7 +13,7 @@
 				%li
 					%a{:href => "#overview-tab", :id => "overview"}Overview
 				%li
-					%a{:href => "#how-it-works-tab", :id => "calendar"}How It Works
+					%a{:href => "#how-it-works-tab", :id => "How It Worksr"}How It Works
 				%li
 					%a{:href => "#calendar-tab", :id => "calendar"}Timeline
 				%li
@@ -26,9 +26,41 @@
 			%h1 Overview
 			.about-paragraph
 				%p We are organizing a group solar purchase program to help meet recent demand. The MMP helps reduce prices by streamlining the process between Homeowners, Solar Installers, the POA and Austin Energy. Additionally, MMP members focus on education to help prospective buyers determine if going solar is right for them. If you are interested in joining the over 225 homes in Mueller with solar, follow check out the "How It Works" section to learn about next steps.
-		#how-it-works
+		#how-it-works-tab
 			%h1 How It Works
+			%p Homeowners who are interested in going solar should follow these steps. All Ages & Technology skill levels welcome - MMP is made up of 30 - 70 year olds. 
 
+
+
+			%table
+				%tr
+					%td 1.
+					%td.comment-icon Attend an MMP Happy Hour
+					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works.
+				%tr
+					%td 2. 
+					%td.roi-icon Figure out your ROI
+					%td	Download this spreadsheet to determine your Return on Investment. Enter in your average monthly solar consumption on the 1st tab and the sheet will estimate your ROI. You can update the sheet with your pricing once you get bids to get a more accurate estimate.
+				%tr 
+					%td 3. 
+					%td.search-icon Decide on 3 Solar Installers
+					%td Check out the Participating Solar Installers page to learn about the 5 solar installers participating in Mueller Solar 2015. Read their information, check out their website, ask your friends, and pick 3 installers to get bids from. Email danx0601@yahoo.com your decision. Please include your (and if applicable your spouses) full name and email address.
+				%tr
+					%td 4. 
+					%td.timer-icon Wait Patiently
+					%td MMP will pass your contact information to the installers you selected. The installers will only contact you to let you know when they will be evaluating your roof. You do not need to be home for this. Once they do their evaluation, they will email you a proposal with a design & pricing. Yay!
+
+				%tr 
+					%td 5.
+					%td.ok-icon Select a Proposal
+					%td Once you receive all three proposals, you will need to select one. We highly recommend that you ask us questions - we will make ourselves available over beers (that you pay for) at HEB, Torchys and on the Street (not a new restaurant, just the actual street) 
+
+
+
+			/ %p OK!, fine, I'm 30. 
+
+			/ %p 30 - 70 year olds.
+	
 		#calendar-tab
 			%h1 Timeline
 		#meetings-tab
