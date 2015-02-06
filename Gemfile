@@ -32,7 +32,9 @@ gem 'haml-rails'
 gem 'jquery-ui-rails'
 
 #For Heroku to work
-gem 'rails_12factor', group: :production
+group :production do
+	gem 'rails_12factor'
+end
 
 # group :assets do
 #   gem 'less'
