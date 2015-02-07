@@ -17,7 +17,7 @@
 				%li
 					%a{:href => "#calendar-tab", :id => "calendar"}Timeline
 				%li
-					%a{:href => "#meetings-tab", :id => "meetings"}Meetings
+					%a{:href => "#happy-hours-tab", :id => "Happy Hour"}Happy Hour
 				%li
 					%a{:href => "#solar-installers-tab", :id => "Participating Solar Installers"}Participating Solar Installers
 
@@ -26,21 +26,21 @@
 			%h1 Overview
 			.about-paragraph
 				%p We are organizing a group solar purchase program to help meet recent demand. The MMP helps reduce prices by streamlining the process between Homeowners, Solar Installers, the POA and Austin Energy. Additionally, MMP members focus on education to help prospective buyers determine if going solar is right for them. If you are interested in joining the over 225 homes in Mueller with solar, follow check out the "How It Works" section to learn about next steps.
-		#how-it-works-tab
+		#how-it-works-tab.grid
 			%h1 How It Works
-			%p Homeowners who are interested in going solar should follow these steps. All Ages & Technology skill levels welcome - MMP is made up of 30 - 70 year olds. 
+			/ %p Homeowners who are interested in going solar should follow these steps. All Ages & Technology skill levels welcome - MMP is made up of 30 - 70 year olds. 
 
 
 
 			%table
 				%tr
 					%td 1.
-					%td.comment-icon Attend an MMP Happy Hour
+					%td.comment-icon Attend a MMP Happy Hour
 					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works.
 				%tr
 					%td 2. 
 					%td.roi-icon Figure out your ROI
-					%td	Download this spreadsheet to determine your Return on Investment. Enter in your average monthly solar consumption on the 1st tab and the sheet will estimate your ROI. You can update the sheet with your pricing once you get bids to get a more accurate estimate.
+					%td	Download this(COMING SOON) spreadsheet to determine your Return on Investment. Enter in your average monthly solar consumption on the 1st tab and the sheet will estimate your ROI. You can update the sheet with your pricing once you get bids to get a more accurate estimate.
 				%tr 
 					%td 3. 
 					%td.search-icon Decide on 3 Solar Installers
@@ -54,6 +54,14 @@
 					%td 5.
 					%td.ok-icon Select a Proposal
 					%td Once you receive all three proposals, you will need to select one. We highly recommend that you ask us questions - we will make ourselves available over beers (that you pay for) at HEB, Torchys and on the Street (not a new restaurant, just the actual street) 
+				%tr
+					%td 6.
+					%td.write-icon Fill Out Paperwork
+					%td At this point, you'll need to (a) sign a contract with the installer, (b) submit a Letter of Intent (LOI) to Austin Energy and (c) submit a request to the POA Modification Committee to approve your install.
+				%tr 
+					%td 7. 
+					%td.sun-icon Go Solar!
+					%td The solar installer you selected will schedule the installation of your system within a couple weeks. This process is pretty painless since they don't need access to the inside of your home. 
 
 
 
@@ -61,10 +69,60 @@
 
 			/ %p 30 - 70 year olds.
 	
-		#calendar-tab
+		#calendar-tab.grid
 			%h1 Timeline
-		#meetings-tab
-			%h1 Meetings
+			
+			%table
+				%tr
+					%td.calendar-icon Feb 11 - Feb 21
+					%td MMP Happy Hours
+					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works. Find
+				%tr
+					%td.calendar-icon February 29
+					%td Installer Selection Deadline
+					%td Email us the names of the installers you want proposals from by this date (feel free to send them earlier and we'll kickstart the proposal process). We will aggregate interest and seemlessly share it with the installer.
+				%tr 
+					%td.calendar-icon Feb 29 - Mar 15
+					%td Proposal Palooza
+					%td The installers you selected will email you your proposal over the next couple weeks.
+				%tr 
+					%td Mar 23
+					%td Selection Sunday
+					%td 
+		#happy-hours-tab
+			%h1 Happy Hours
+
+			.hh
+				%p.calendar-icon Monday, February 16
+				%p.location-icon 4448 Camacho St.
+				%p.clock-icon 6 PM
+				%p
+					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+				
+			.hh
+				%p.calendar-icon Thursday, February 19
+				%p.location-icon 4448 Camacho St.
+				%p.clock-icon 7:30 PM
+				%p
+					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+
+			.hh
+				%p.calendar-icon Saturday, February 21
+				%p.location-icon Torchy's
+				%p.clock-icon 4PM				
+				%p
+					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+
+			.hh
+				%p.calendar-icon Tuesday, February 24
+				%p.location-icon ?
+				%p.clock-icon ?
+				%p
+					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+
+
+
+
 		#solar-installers-tab
 			%h1 Participating Solar Installers
 
