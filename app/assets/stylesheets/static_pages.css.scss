@@ -14,7 +14,10 @@
 	width: 550px;
 	margin: 0 auto;
 
+}
 
+#overview-tab .about-paragraph p {
+	display: block;
 }
 
 .welcome img {
@@ -55,7 +58,7 @@
 
 
 
-.linkbar li {
+.linkbar li, .footer {
 	display:inline-block;	
 	background: #16a085;
 	margin: 10px;
@@ -75,7 +78,7 @@
 }
 
 #main-content h1 {
-	padding: 20px 0px 30px 0px;
+	padding: 30px 0px 30px 0px;
 }
 
 .grid table {
@@ -164,6 +167,12 @@ $iconsize: 5%;
 	background-size: 9%;
 }
 
+.date-icon {
+	padding-left: $iconpadding;
+	background: image-url("icons/calendar.png") no-repeat left center;
+	background-size: $iconsize;
+}
+
 .location-icon {
 	padding-left: $iconpadding;
 	background: image-url("icons/location.png") no-repeat left center;
@@ -182,6 +191,13 @@ $iconsize: 5%;
 	background-size: 28%;
 }
 
+.home-icon {
+	padding-left: $iconpadding;
+	background: image-url("icons/home.png") no-repeat left center;
+	background-size: $iconsize;
+}
+
+
 .hh {
 	width: 600px;
 	float: left;
@@ -196,4 +212,71 @@ $iconsize: 5%;
 
 }
 
+.footer-2015 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-2015 a {
+	padding: 10px;
+	margin: 0 auto;
+
+}
+
+.paragraph {
+	display: block;
+	height: 170px;
+
+
+}
+
+.installers {
+	float: left;
+	display: block;
+}
+.installers a {
+	margin: 0px 0px 20px 0px;
+	border-left: 5px solid white;
+	display: block;
+}
+
+.installers .active {
+	border-left: 5px solid #f1c40f;
+}
+
+.installer-details {
+	margin-left: 330px;
+	width: 850px;
+
+}
+
+.installer-details td { 
+/*	vertical-align: middle;*/
+
+	font-size: 18px;
+}
+
+.installer-details tr {
+	padding-bottom: 35px;
+	display: block;
+}
+.installer-details h3 {
+	padding-bottom: 20px;
+}
+
+.installer-details td:nth-child(1) {
+	width: 200px;
+	background-size: 6% !important;
+	padding-left: 20px !important;
+}
+.installer-details td:nth-child(2) {
+	padding-left: 20px;
+
+}
+
+.installer-details .comment-icon {
+	padding-left: $iconpadding;
+	background: image-url("icons/comment.png") no-repeat left top;
+	background-size: $iconsize;
+}
 

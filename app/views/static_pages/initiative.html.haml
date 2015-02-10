@@ -13,7 +13,7 @@
 				%li
 					%a{:href => "#overview-tab", :id => "overview"}Overview
 				%li
-					%a{:href => "#how-it-works-tab", :id => "How It Worksr"}How It Works
+					%a{:href => "#how-it-works-tab", :id => "How It Works"}How It Works
 				%li
 					%a{:href => "#calendar-tab", :id => "calendar"}Timeline
 				%li
@@ -24,8 +24,13 @@
 	.container#main-content	
 		#overview-tab
 			%h1 Overview
-			.about-paragraph
-				%p We are organizing a group solar purchase program to help meet recent demand. The MMP helps reduce prices by streamlining the process between Homeowners, Solar Installers, the POA and Austin Energy. Additionally, MMP members focus on education to help prospective buyers determine if going solar is right for them. If you are interested in joining the over 225 homes in Mueller with solar, follow check out the "How It Works" section to learn about next steps.
+			.paragraph
+				.about-paragraph
+					%p We are organizing a group solar purchase program to help meet recent demand. The MMP helps reduce prices by streamlining the process between Homeowners, Solar Installers, the POA and Austin Energy. Additionally, MMP members focus on education to help prospective buyers determine if going solar is right for them. If you are interested in joining the over 225 homes in Mueller with solar, follow check out the "How It Works" section to learn about next steps.
+
+			/ .footer-2015
+			/ 	%a{:href => "#how-it-works-tab", :id => "How It Works"}Next: How it Works
+					
 		#how-it-works-tab.grid
 			%h1 How It Works
 			/ %p Homeowners who are interested in going solar should follow these steps. All Ages & Technology skill levels welcome - MMP is made up of 30 - 70 year olds. 
@@ -62,7 +67,6 @@
 					%td 7. 
 					%td.sun-icon Go Solar!
 					%td The solar installer you selected will schedule the installation of your system within a couple weeks. This process is pretty painless since they don't need access to the inside of your home. 
-
 
 
 			/ %p OK!, fine, I'm 30. 
@@ -125,6 +129,51 @@
 
 		#solar-installers-tab
 			%h1 Participating Solar Installers
+			.installers
+				%ul
+					%li
+						= link_to( image_tag('installers/blank.png'), "#installer1")
+					%li
+						= link_to( image_tag('installers/blank.png'), "#installer2")
+					%li
+						= link_to( image_tag('installers/blank.png'), "#installer3")
+					%li
+						= link_to( image_tag('installers/blank.png'), "#installer4")
+					%li
+						= link_to( image_tag('installers/blank.png'), "#installer5")
+
+			.installer-details
+				#installer1
+					%h3 Installer 1
+					%table
+						%tr
+							%td.comment-icon Pitch
+							%td t vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum 
+						%tr
+							%td.home-icon Headquarters
+							%td City, ST
+						%tr
+							%td.date-icon Since
+							%td 2008
+						%tr
+							%td.sun-icon Installations (in Mueller)
+							%td 210 (20)
+						%tr
+							%td.location-icon Website 
+							%td http://installer1.com
+						%tr
+							%td
+							%td
+
+				#installer2
+					Installer 2
+				#installer3
+					Installer 3
+				#installer2
+					Installer 4
+				#installer3
+					Installer 5
+
 
 
 
