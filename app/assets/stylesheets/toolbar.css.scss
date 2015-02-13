@@ -151,11 +151,42 @@ $toolbarheight: 48px;
 
 }
 
-.message {
+.message p {
+    display: block;
     margin: 0 auto;
-    font-size: 20px;
-    width: 1200px;
+}
+
+.banner {
+    height: 500px;
+}
+
+#hey {
+    padding-top: 200px;
+    margin: 0 auto;
+    font-size: 100px;
+    line-height: 120px;
+}
+/*.banner:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+.message p {
+
+    display: block;
+    margin: 0 auto;
+}
+.message {   
+    height: 300px;
+    border-radius: 36px;
+    background: #e67e22;
+    margin: 0 auto;
+    font-size: 32px;
+    width: 800px;
+    margin-top:75px;
     padding: 3px;
+    text-align: center;
 
     a {
         color: white;
