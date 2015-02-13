@@ -157,7 +157,8 @@ $toolbarheight: 48px;
 }
 
 .banner {
-    height: 500px;
+    height: 100vh;
+    text-align: center;
 }
 
 #hey {
@@ -211,4 +212,15 @@ $toolbarheight: 48px;
 
 .banner img {
     padding-left: 5px;
+}
+
+#learn-more {
+    padding-top: 20vh;
+}
+
+.down-arrow {
+    padding-top: 30px;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
 }
