@@ -214,6 +214,7 @@
 
 #solar-dictionary-tab ul {
   width: 200px;
+
 }
 
 .list ul li a {
@@ -282,4 +283,9 @@
   p {
     color: lightgrey;
   }
+}
+
+ul#solar-faq li, ul#solar-dictionary li {
+  border-bottom: 1px dotted lightgrey;
+  line-height: 18px;
 }
