@@ -1,12 +1,14 @@
 .welcome
-	.back
-		%p
+	.container 
+		.back
 			=link_to "< Back", root_path
-	.title 
-		= image_tag('icons/sun.png')
-		%p MUELLER SOLAR 2015
 
-	=link_to "Join the Facebook Group", "https://www.facebook.com/groups/1524006001207302/"
+		.title 
+			= image_tag('icons/sun.png')
+			%p MUELLER SOLAR 2015
+
+		.fb
+			=link_to "Join the Facebook Group", "https://www.facebook.com/groups/muellersolar2015/"
  
 .section#solar-2015
 	.container#solar-initiative
@@ -20,8 +22,8 @@
 					%a{:href => "#calendar-tab", :id => "calendar"}Timeline
 				%li
 					%a{:href => "#happy-hours-tab", :id => "Happy Hour"}Happy Hour
-				/ %li
-				/ 	%a{:href => "#solar-installers-tab", :id => "Participating Solar Installers"}Participating Solar Installers
+				%li
+					%a{:href => "#solar-installers-tab", :id => "Participating Solar Installers"}Participating Solar Installers
 
 	.container#main-content	
 		#overview-tab
@@ -82,7 +84,7 @@
 				%tr
 					%td.calendar-icon Feb 16 - Feb 26
 					%td MMP Happy Hours
-					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works. Find
+					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works. <a href="Check out Happy Hour Dates" 
 				%tr
 					%td.calendar-icon February 29
 					%td Installer Selection Deadline
@@ -97,34 +99,34 @@
 					%td Deadline to make a final decision on which installer you want to do your installation.
 		#happy-hours-tab
 			%h1 Happy Hours
-
+			%p To RSVP, you will need to be a member of the Facebook "Mueller Neighbors" group. If you aren't part of that group and don't want to be, simply email Aman at amankj@gmail.com to RSVP.  Thanks!
 			.hh
 				%p.calendar-icon Monday, February 16
 				%p.location-icon 4448 Camacho St.
 				%p.clock-icon 6 PM
 				%p
-					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+					= link_to "RSVP", "https://www.facebook.com/events/352858038248955/", :class => "mail-icon", target: "_blank"
 				
 			.hh
 				%p.calendar-icon Thursday, February 19
 				%p.location-icon 4448 Camacho St.
 				%p.clock-icon 7:30 PM
 				%p
-					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+					= link_to "RSVP", "https://www.facebook.com/events/808486215910304/", :class => "mail-icon", target: "_blank"
 
 			.hh
 				%p.calendar-icon Saturday, February 21
 				%p.location-icon Torchy's
 				%p.clock-icon 4 PM				
 				%p
-					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+					= link_to "RSVP", "https://www.facebook.com/events/788148297921298/", :class => "mail-icon", target: "_blank"
 
 			.hh
 				%p.calendar-icon Thursday, February 26
 				%p.location-icon Dan & Laura's House, 4448 Camacho St.
 				%p.clock-icon 7 PM
 				%p
-					= link_to "RSVP", "http://www.austinenergy.com", :class => "mail-icon"
+					= link_to "RSVP", "https://www.facebook.com/events/1418043175156364/", :class => "mail-icon", :target => "_blank"
 
 
 
@@ -134,38 +136,40 @@
 			.installers
 				%ul
 					%li
-						= link_to( image_tag('installers/blank.png'), "#installer1")
+						= link_to( image_tag('installers/longhorn-solar-logo.jpg'), "#installer1")
 					%li
-						= link_to( image_tag('installers/blank.png'), "#installer2")
+						= link_to( image_tag('installers/native-solar-logo.jpg'), "#installer2")
 					%li
-						= link_to( image_tag('installers/blank.png'), "#installer3")
+						= link_to( image_tag('installers/revolve-solar-logo.jpg'), "#installer3")
 					%li
-						= link_to( image_tag('installers/blank.png'), "#installer4")
+						= link_to( image_tag('installers/circular-energy-logo.jpg'), "#installer4")
 					%li
-						= link_to( image_tag('installers/blank.png'), "#installer5")
+						= link_to( image_tag('installers/lighthouse-solar-logo.jpg'), "#installer5")
 
 			.installer-details
 				#installer1
-					%h3 Installer 1
+					%h3 Longhorn Solar
 					%table
 						%tr
-							%td.comment-icon Pitch
-							%td t vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum 
+							%td.comment-icon Why Us
+							%td Coming Soon
 						%tr
 							%td.home-icon Headquarters
-							%td City, ST
+							%td Coming Soon
 						%tr
-							%td.date-icon Since
-							%td 2008
+							%td.date-icon Coming Soon
+							%td Coming Soon
 						%tr
 							%td.sun-icon Installations (in Mueller)
-							%td 210 (20)
+							%td Coming Soon
+						%tr
+							%td.sun-icon Installed Capacity (in Mueller)
+							%td Coming Soon	
+
 						%tr
 							%td.location-icon Website 
-							%td http://installer1.com
-						%tr
-							%td
-							%td
+							%td 
+								=link_to "longhornsolar.com", "http://www.longhornsolar", target: "_blank"
 
 				#installer2
 					%h3 Installer 2

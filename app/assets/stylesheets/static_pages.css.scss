@@ -30,8 +30,8 @@
 	padding-top: 5px;
 }
 
-.back p {
-	padding-left: 10px;
+.back, .fb {
+	padding-left: 13px;
 	padding-top: 5px;
 
 	a {
@@ -97,6 +97,10 @@
 	width: 225px !important;
 }
 
+
+#happy-hours-tab>p {
+	padding-bottom: 35px;
+}
 .grid>p {
 	padding-bottom: 30px;
 }
@@ -235,17 +239,13 @@ $iconsize: 5%;
 	display: block;
 }
 .installers a {
-	margin: 0px 0px 20px 0px;
-	border-left: 5px solid white;
+	margin: 0px 0px 35px 0px;
 	display: block;
 }
 
-.installers .active {
-	border-left: 5px solid #f1c40f;
-}
 
 .installer-details {
-	margin-left: 330px;
+	margin-left: 350px;
 	width: 850px;
 
 }
@@ -257,7 +257,7 @@ $iconsize: 5%;
 }
 
 .installer-details tr {
-	padding-bottom: 35px;
+	padding-bottom: 50px;
 	display: block;
 }
 .installer-details h3 {
@@ -265,7 +265,7 @@ $iconsize: 5%;
 }
 
 .installer-details td:nth-child(1) {
-	width: 200px;
+	width: 250px;
 	background-size: 6% !important;
 	padding-left: 20px !important;
 }
@@ -280,3 +280,10 @@ $iconsize: 5%;
 	background-size: $iconsize;
 }
 
+.installers img {
+	border: 5px solid #7f8c8d;
+}
+
+.installers .active > img {
+	border: 5px solid #f39c12;
+}

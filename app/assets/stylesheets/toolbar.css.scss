@@ -159,6 +159,7 @@ $toolbarheight: 48px;
 .banner {
     height: 100vh;
     text-align: center;
+/*    white-space: nowrap;*/
 }
 
 #hey {
@@ -223,4 +224,12 @@ $toolbarheight: 48px;
     -ms-transform: rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
     transform: rotate(270deg);
+}
+
+.title p {
+    float: left;
+}
+
+.fb {
+    float: right;
 }
