@@ -15,17 +15,21 @@
 		.linkbar
 			%ul
 				%li
-					%a{:href => "#overview-tab", :id => "overview"}Overview
+					%a{:href => "#overview-tab", :id => "Overview"}Overview
 				%li
 					%a{:href => "#how-it-works-tab", :id => "How It Works"}How It Works
 				%li
-					%a{:href => "#calendar-tab", :id => "calendar"}Timeline
+					%a{:href => "#calendar-tab", :id => "Timeline"}Timeline
 				%li
 					%a{:href => "#happy-hours-tab", :id => "Happy Hour"}Happy Hour
 				%li
-					%a{:href => "#solar-installers-tab", :id => "Participating Solar Installers"}Participating Solar Installers
+					%a{:href => "#return-tab", :id => "Return on Investment"}Financial Analysis
+				%li
+					%a{:href => "#solar-installers-tab", :id => "Participating Solar Installers"}Solar Installers
 				%li
 					%a{:href => "#2015-disclosure-tab", :id => "Disclosure"}Disclosure
+				%li
+					%a{:href => "#contact-tab", :id => "Contact Us"}Contact Us
 	.container#main-content	
 		#overview-tab
 			%h1 Overview
@@ -59,7 +63,7 @@
 				%tr
 					%td 4. 
 					%td.roi-icon Figure out your ROI
-					%td	Download this(COMING SOON) spreadsheet to determine your Return on Investment. Enter in your average monthly solar consumption on the 1st tab and the sheet will estimate your ROI. You can update the sheet with your pricing once you get bids to get a more accurate estimate.
+					%td	<a href="https://docs.google.com/forms/d/1n7NWfjT9ui-PFHb8mGR32kiisOMHWL03rGwC7Fc6Ar8/viewform?usp=send_form" target="_blank">Download This</a> spreadsheet to determine your Return on Investment. Enter in your average monthly solar consumption on the 1st tab and the sheet will estimate your ROI. You can update the sheet with your pricing once you get bids to get a more accurate estimate.
 
 				%tr 
 					%td 5.
@@ -73,11 +77,6 @@
 					%td 7. 
 					%td.sun-icon Go Solar!
 					%td The solar installer you selected will schedule the installation of your system within a couple weeks. This process is pretty painless since they don't need access to the inside of your home. 
-
-
-			/ %p OK!, fine, I'm 30. 
-
-			/ %p 30 - 70 year olds.
 	
 		#calendar-tab.grid
 			%h1 Timeline
@@ -88,7 +87,7 @@
 					%td MMP Happy Hours
 					%td You'll learn everything you need to know about solar. We'll tell you what happens to solar panels when scenes from "Twister" unfold and walk you through how the technology works.
 				%tr
-					%td.calendar-icon Mar 1
+					%td.calendar-icon Mar 8
 					%td Installer Selection Deadline
 					%td <a href="https://docs.google.com/forms/d/1n7NWfjT9ui-PFHb8mGR32kiisOMHWL03rGwC7Fc6Ar8/viewform?usp=send_form" target="_blank">Fill out this form</a> to submit your installer selection (feel free to fill this information out before this date and we'll kickstart your proposals). We will aggregate interest and seemlessly share it with the installer.
 				%tr 
@@ -99,6 +98,21 @@
 					%td.calendar-icon Mar 23
 					%td Selection Sunday
 					%td Deadline to make a final decision on which installer you want to do your installation.
+		#return-tab
+			%h1 Financial Analysis
+			%p Once you've received a proposal, you can calculate your Return on Investment (ROI) and Payback using <a href="http//muellermegwawatt.org/Mueller-Solar-Calculator.pdf" target="_blank">this spreadsheet</a>. If you don't have excel, upload it to Google Docs for free and the sheet will work just fine.
+
+			%br
+			%p An example of a homeowners financial analysis is shown below.
+			%br
+			%br
+
+			= image_tag('mueller-roi.png')
+
+
+
+			/ <iframe width=1200 height= 700 src="https://docs.google.com/spreadsheets/d/11mbrtiAR43lKj1D16V59evfK14I91bD6vtDwCt9E0UE/edit?usp=sharing"></iframe>
+
 		#happy-hours-tab
 			%h1 Happy Hours
 			%p To RSVP, you will need to be a member of the Facebook "Mueller Neighbors" group. If you aren't part of that group and don't want to be, simply email Aman at amankj@gmail.com to RSVP.  Thanks!
@@ -185,14 +199,8 @@
 						%tr
 							%td.comment-icon Why Us
 							%td 
-								%p We offer a comprehensive range of solutions to save and create energy. We are unique in the amount of services we offer, allowing us to take a holistic approach when assisting our customers. As innovators, we are constantly studying current research and looking for better ways to serve our customers. We are always analyzing cost, new technology and pushing ourselves to provide the absolute best products at the best price. We offer products and services with a realistic return on investment and payback period. We understand that financial viability is an inherent requirement for something to be sustainable.
-
-								%br
-								%p Our reputation is one of the best in the business. We are known for being approachable, honest, dependable, trustworthy, and professional. We execute with quality and integrity. Learn more about our team of green building and renewable energy professionals below.
-								
+								%p Native is an innovative green building company in the Central Texas region. We specialize in net zero construction, which means the total amount of energy used by the building on an annual basis is roughly equal to the amount of renewable energy created on site. We have in house photovoltaic (solar) services and install systems on residences and businesses all around Texas. Native is unique because we take a comprehensive approach when looking at a building and can address many aspects of making a home or business energy efficient as well as help reduce costs through solar. Native is not the least expensive PV installer, but you can ensure that the job will be done right and completed with integrity. We'll treat your project like we would a project on our own home. Native is a local family owned business, started in 2007. The tax credit may end in 2016, at which time Native will still be around to offer warranties and services for the PV products sold because of the diversification in our business model. Native stands strong in our mission to provide quality options for our customers that are as beneficial for them as they are for the environment and community. 			
 					
-
-
 						%tr
 							%td.home-icon Headquarters
 							%td Austin, TX
@@ -323,5 +331,9 @@
 			%h1 Disclosure
 			%p Members of the Mueller Megawatt Project do not have a financial interest in any solar installers and do not make money off solar consultations they provide to Mueller homeowners. They do, however, accept free beer with a smile.
 
+		#contact-tab
+			%h1 Contact Us
+			.about-paragraph
+				%p If you have any questions, please <a href="https://www.facebook.com/groups/muellersolar2015/"" target="_blank">join the facebook group</a> or email Dan McAtee at danx0601 at yahoo.com or Aman Jain at amankj at gmail.com.
 
 
